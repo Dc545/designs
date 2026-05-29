@@ -23,11 +23,12 @@ body {
 
 
 h1 {
-  font-size: 1.9rem;
-  font-weight: 700;
-  margin-bottom: 8px;
+  text-align: center;
+  padding-bottom: 12px;
+  border-bottom: 2px solid #22c55e;
+  width: fit-content;
+  margin: 60px auto 20px auto;
 }
-
 .tagline {
   font-size: 0.95rem;
   color: #8a8f98;
