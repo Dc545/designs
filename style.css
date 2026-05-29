@@ -21,15 +21,6 @@ body {
   text-align: center;
 }
 
-.logo {
-  width: 88px;
-  height: 88px;
-  border-radius: 50%;
-  object-fit: contain;
-  margin-bottom: 22px;
-  background: #000;
-  padding: 8px;
-}
 
 h1 {
   font-size: 1.9rem;
