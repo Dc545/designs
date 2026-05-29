@@ -184,3 +184,20 @@ footer {
 .btn-whatsapp:hover {
   background: #128C7E;
 }
+.btn-smart {
+  display: inline-block;
+  margin-top: 15px;
+  padding: 12px 24px;
+  background: #22c55e;
+  color: #0a0a0a;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+  font-size: 15px;
+  transition: all 0.3s ease;
+}
+
+.btn-smart:hover {
+  background: #16a34a;
+  transform: translateY(-2px);
+}
