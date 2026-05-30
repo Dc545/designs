@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://dc545.github.io/designs/sitemap.xml
