@@ -399,3 +399,25 @@ img[src*="project"] {
 .whatsapp-float:hover, .call-float:hover {
     transform: scale(1.1);
 }
+.call-float {
+    position: fixed;
+    bottom: 65px; /* 45px gap above WhatsApp. Change this to tune spacing */
+    right: 20px;
+    background: #00ff88;
+    color: #000;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 26px;
+    text-decoration: none;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+    z-index: 999;
+    transition: transform 0.2s;
+}
+
+.call-float:hover {
+    transform: scale(1.1);
+}
