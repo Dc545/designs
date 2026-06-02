@@ -396,11 +396,10 @@ img[src*="project"] {
 
 .whatsapp-float:hover, .call-float:hover {
     transform: scale(1.1);
-    .call-float {
-    bottom: 75px; /* change 110px to 75px */
-}
-    /* rest stays same */
+}  /* close hover here */
 
+.call-float {
+    bottom: 55px; /* change 75px to 55px */
     right: 20px;
     background: #00ff88;
     color: #000;
