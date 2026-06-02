@@ -424,3 +424,11 @@ img[src*="project"] {
     display: block;
     margin: 0 auto; /* centers the button */
 }
+body { border: 5px solid red !important; }
+section:first-of-type {
+    text-align: center;
+}
+section:first-of-type a {
+    display: inline-block;
+    margin: 20px auto 0;
+}
