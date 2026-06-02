@@ -82,16 +82,14 @@ body {
     font-family: 'Space Grotesk', sans-serif;
     letter-spacing: -0.5px;
 }
+.hero, .intro, section:first-of-type {
+    padding-bottom: 40px; /* was probably 100px+ */
+    margin-bottom: 40px;  /* reduce this too */
+}
 
-.hero {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    padding: 120px 5% 80px;
-    position: relative;
+.services, #services {
+    padding-top: 40px; /* was probably 100px+ */
+    margin-top: 40px;  /* reduce this */
 }
 
 .hero-content {
