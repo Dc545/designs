@@ -401,9 +401,9 @@ img[src*="project"] {
 }
 .call-float {
     position: fixed;
-    .call-float {
+   .call-float {
     position: fixed;
-    bottom: 80px; /* was 65px, now 80px = 60px gap */
+    bottom: 95px; /* jump from 80px to 95px */
     right: 20px;
     /* rest stays same */
 }
