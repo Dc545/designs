@@ -399,9 +399,8 @@ img[src*="project"] {
 }
   .call-float {
     bottom: 110px; /* jump from 95px to 110px */
-}
     /* rest stays same */
-}
+
     right: 20px;
     background: #00ff88;
     color: #000;
