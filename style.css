@@ -401,7 +401,12 @@ img[src*="project"] {
 }
 .call-float {
     position: fixed;
-    bottom: 65px; /* 45px gap above WhatsApp. Change this to tune spacing */
+    .call-float {
+    position: fixed;
+    bottom: 80px; /* was 65px, now 80px = 60px gap */
+    right: 20px;
+    /* rest stays same */
+}
     right: 20px;
     background: #00ff88;
     color: #000;
