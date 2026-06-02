@@ -336,3 +336,23 @@ img[src*="project"] {
     border-radius: 12px;
     display: block;
 }
+/* Recent Work grid fix */
+.recent-work .services-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 2rem;
+    margin-top: 2rem;
+}
+
+.recent-work .glass-card {
+    padding: 1.5rem;
+    overflow: hidden; /* stops images from breaking out */
+}
+
+.recent-work .glass-card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    display: block;
+}
