@@ -188,3 +188,45 @@ body {
     .tagline { font-size: 1.8rem; }
     .section-title { font-size: 2rem; }
 }
+/* Center price tags */
+.glass-card h3, .glass-card p {
+    text-align: center;
+}
+.price {
+    color: #25D366;
+    font-weight: 700;
+    font-size: 1.3rem;
+    margin-top: 15px;
+    text-align: center !important;
+}
+
+/* Projects grid + images */
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-top: 40px;
+}
+.project-card img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 12px;
+    margin-bottom: 15px;
+}
+.project-card h3, .project-card p {
+    text-align: center;
+}
+
+/* Fix logo container */
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.logo img {
+    width: 42px;
+    height: 42px;
+    border-radius: 50%;
+    object-fit: cover;
+}
