@@ -284,3 +284,39 @@ body, html {
     overflow-x: hidden;
     width: 100%;
 }
+/* Hero section - make it pop */
+.hero h1 {
+    font-size: 2.4rem !important;
+    line-height: 1.2;
+    margin-bottom: 15px;
+    background: linear-gradient(90deg, #25D366, #00ff88);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+}
+
+.hero p {
+    font-size: 1.15rem !important;
+    color: #ccc;
+    margin-bottom: 30px;
+}
+
+/* WhatsApp button - bigger + glow */
+.btn, .contact-btn {
+    padding: 16px 32px !important;
+    font-size: 1.1rem !important;
+    font-weight: 700;
+    border-radius: 50px;
+    box-shadow: 0 0 25px rgba(37, 211, 102, 0.4);
+    transition: all 0.3s ease;
+}
+
+.btn:hover, .contact-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 0 35px rgba(37, 211, 102, 0.7);
+}
+
+/* More breathing room */
+.hero {
+    padding: 100px 20px !important;
+}
