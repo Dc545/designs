@@ -361,33 +361,58 @@ body {
 main, section:first-of-type {
   flex: 1;
 }
-/* === FLOATING BUTTONS - FIXED POSITION === */
-a[href*="wa.me"], .call-float {
+/* === FLOATING BUTTONS - NO TANGLE === */
+a[href*="wa.me"] {
   position: fixed !important;
-  bottom: 120px !important;
+  bottom: 140px !important;
+  right: 20px !important;
   width: 60px !important;
   height: 60px !important;
   border-radius: 50% !important;
+  background: #25D366 !important;
+  color: white !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
   font-size: 28px !important;
   box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
-  transition: all 0.3s ease !important;
   z-index: 99999 !important;
   text-decoration: none !important;
 }
 
-a[href*="wa.me"] {
-  right: 20px !important;
-  background: #25D366 !important;
-  color: white !important;
-}
-
 .call-float {
+  position: fixed !important;
+  bottom: 140px !important;
   right: 95px !important;
+  width: 60px !important;
+  height: 60px !important;
+  border-radius: 50% !important;
   background: #007bff !important;
   color: white !important;
+  display: flex !important;
+  align-items: center !important;
+  justify-content: center !important;
+  font-size: 28px !important;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+  z-index: 99999 !important;
+  text-decoration: none !important;
+}
+
+/* Mobile: smaller + more space */
+@media (max-width: 600px) {
+  a[href*="wa.me"] {
+    width: 55px !important;
+    height: 55px !important;
+    bottom: 120px !important;
+    right: 15px !important;
+  }
+  .call-float {
+    width: 55px !important;
+    height: 55px !important;
+    bottom: 120px !important;
+    right: 80px !important;
+  }
+}
 }
 
 /* Mobile resize */
