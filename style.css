@@ -1,400 +1,197 @@
+/* Base */
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-body, html {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
-    background: #0a0a0a;
-    color: #fff;
-    overflow-x: hidden;
-    width: 100%;
-}
-
-/* Background mesh */
-.background-mesh {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: radial-gradient(circle at 20% 50%, rgba(37, 211, 102, 0.1) 0%, transparent 50%),
-                radial-gradient(circle at 80% 20%, rgba(0, 255, 136, 0.1) 0%, transparent 50%);
-    z-index: -1;
-}
-
-/* Nav */
-.nav {
-    padding: 20px;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 100;
-    background: rgba(10, 10, 10, 0.8);
-    backdrop-filter: blur(10px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-}
-
-.logo {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-}
-
-.logo img {
-    width: 42px;
-    height: 42px;
-    border-radius: 50%;
-    object-fit: cover;
-}
-
-.logo-text {
-    font-weight: 700;
-    font-size: 1.1rem;
-    letter-spacing: 0.5px;
-}
-
-/* Container */
-.container {
-    max-width: 1100px;
-    margin: 0 auto;
-    padding: 0 20px;
+body {
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+  background: #0a0a0a;
+  color: #fff;
+  overflow-x: hidden;
+  padding-bottom: 220px; /* Space for floating buttons */
 }
 
 /* Hero */
-.hero {
-    min-height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    padding: 120px 20px 60px;
-}
-
 .hero-content {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
-    max-width: 750px;
+  text-align: center;
+  padding: 80px 20px;
 }
 
-/* HERO POP - Force big text */
 .tagline {
-    font-size: 2.8rem !important;
-    line-height: 1.1 !important;
-    font-weight: 800 !important;
-    margin-bottom: 20px !important;
-    color: #fff !important;
-    text-align: center !important;
-    text-shadow: 0 0 30px rgba(37, 211, 102, 0.6) !important;
+  font-size: 2.8rem;
+  line-height: 1.1;
+  color: #fff;
+  text-shadow: 0 0 25px rgba(37,211,102,0.6);
+  margin-bottom: 20px;
+  font-weight: 800;
 }
 
 .sub-tagline {
-    font-size: 1.25rem !important;
-    color: #bbb !important;
-    margin-bottom: 35px !important;
-    text-align: center !important;
-    font-weight: 400;
-}
-
-/* Main WhatsApp Button POP */
-.hero-content a,
-.cta-button {
-    padding: 22px 50px !important;
-    font-size: 1.3rem !important;
-    font-weight: 900 !important;
-    border-radius: 50px !important;
-    background: #25D366 !important;
-    color: #000 !important;
-    text-decoration: none !important;
-    box-shadow: 0 0 45px rgba(37, 211, 102, 0.9) !important;
-    display: inline-block !important;
-    letter-spacing: 0.8px !important;
-    transform: scale(1.05);
-    transition: all 0.3s ease;
-}
-
-.hero-content a:hover,
-.cta-button:hover {
-    transform: scale(1.08) translateY(-3px);
-    box-shadow: 0 0 55px rgba(37, 211, 102, 1) !important;
+  font-size: 1.25rem;
+  color: #ccc;
+  margin-bottom: 35px;
 }
 
 /* Sections */
-.section { 
-    padding: 80px 20px; 
+.section {
+  padding: 80px 20px;
 }
 
-.section-title { 
-    text-align: center; 
-    font-size: 2.2rem; 
-    margin-bottom: 50px;
-    font-weight: 800;
-    color: #fff;
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 2.2rem;
+  margin-bottom: 50px;
+  color: #fff;
 }
 
 /* Glass cards */
-.services-grid, .projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-    gap: 30px;
-}
-
 .glass-card {
-    background: rgba(255,255,255,0.05);
-    backdrop-filter: blur(12px);
-    padding: 35px 25px;
-    border-radius: 20px;
-    border: 1px solid rgba(37,211,102,0.2);
-    transition: transform 0.3s, box-shadow 0.3s;
-    text-align: center;
+  background: rgba(255,255,255,0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(37,211,102,0.2);
+  border-radius: 20px;
+  padding: 35px 25px;
+  text-align: center;
 }
 
-.glass-card:hover {
-    transform: translateY(-8px);
-    box-shadow: 0 10px 40px rgba(37,211,102,0.2);
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
 }
 
-.glass-card h3 {
-    font-size: 1.2rem;
-    margin-bottom: 15px;
-    color: #fff;
-    font-weight: 700;
+.price {
+  font-size: 1.6rem;
+  font-weight: 900;
+  color: #25D366;
+  text-shadow: 0 0 20px rgba(37,211,102,0.8);
+  display: block;
+  margin: 15px 0;
 }
 
-/* PRICES POP - Force big green */
-.price,
-.glass-card span {
-    color: #25D366 !important;
-    font-weight: 900 !important;
-    font-size: 1.6rem !important;
-    margin-top: 12px !important;
-    text-align: center !important;
-    text-shadow: 0 0 20px rgba(37, 211, 102, 0.8) !important;
-    display: block !important;
+.btn-small {
+  display: inline-block;
+  padding: 10px 20px;
+  background: #25D366;
+  color: #000;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: 700;
+  margin-top: 15px;
 }
 
-/* Projects + Recent Work images */
-.project-card img,
-.recent-grid img {
-    width: 100% !important;
-    height: 200px !important;
-    object-fit: cover !important;
-    border-radius: 12px;
-    margin-bottom: 15px;
-    display: block;
-    border: 1px solid rgba(255,255,255,0.1);
+/* Projects */
+.recent-grid, .projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 20px;
 }
 
-.project-card h3, 
-.project-card p {
-    text-align: center;
-}
-
-/* Recent Work section */
-.recent-work {
-    padding: 80px 20px;
-    background: rgba(255,255,255,0.02);
-}
-
-.recent-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 25px;
-    margin-top: 30px;
+.recent-grid img, .project-card img {
+  width: 100%;
+  border-radius: 15px;
 }
 
 /* Call Me */
-.phone-number {
-    font-size: 2rem;
-    color: #25D366;
-    text-decoration: none;
-    font-weight: 900;
-    display: block;
-    margin: 20px 0;
-    text-shadow: 0 0 20px rgba(37, 211, 102, 0.6);
+.call-card h2 {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  color: #fff;
 }
 
-.availability { 
-    color: #aaa;
-    font-size: 1rem;
+.phone-number {
+  font-size: 1.8rem;
+  font-weight: 800;
+  color: #25D366;
+  text-decoration: none;
+  text-shadow: 0 0 20px rgba(37,211,102,0.6);
+}
+
+.availability {
+  color: #aaa;
+  margin-top: 15px;
 }
 
 /* Footer */
-.footer {
-    text-align: center;
-    padding: 40px 20px;
-    border-top: 1px solid rgba(255,255,255,0.1);
-    color: #666;
+footer {
+  text-align: center;
+  padding: 40px 20px;
+  background: #0a0a0a;
+  position: relative;
+  z-index: 1;
 }
 
-/* Floating buttons */
-.whatsapp-float {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    background: #25D366;
-    color: #000;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 32px;
-    text-decoration: none;
-    box-shadow: 0 0 35px rgba(37, 211, 102, 0.8);
-    z-index: 9999;
-    transition: transform 0.2s;
+.footer-links a {
+  color: #25D366;
+  margin: 0 10px;
+  text-decoration: none;
 }
 
-.whatsapp-float:hover {
-    transform: scale(1.15);
+.copyright {
+  color: #888;
+  font-size: 14px;
+  margin-top: 15px;
 }
 
-.call-float {
-    position: fixed;
-    bottom: 95px;
-    right: 20px;
-    background: #00ff88;
-    color: #000;
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 26px;
-    text-decoration: none;
-    box-shadow: 0 0 35px rgba(0, 255, 136, 0.8);
-    z-index: 9998;
-    transition: transform 0.2s;
+.built {
+  color: #666;
+  font-size: 13px;
+  margin-top: 8px;
 }
 
-.call-float:hover {
-    transform: scale(1.15);
-}
-
-/* Mobile fixes */
-@media (max-width: 768px) {
-    .tagline { 
-        font-size: 2.2rem !important;
-        line-height: 1.15 !important;
-    }
-    .section-title { 
-        font-size: 1.8rem; 
-    }
-    .price,
-    .glass-card span {
-        font-size: 1.4rem !important;
-    }
-    .hero-content a {
-        padding: 20px 40px !important;
-        font-size: 1.2rem !important;
-    }
-}
-/* === FOOTER + FLOATING BUTTONS === */
-footer a {
-  transition: 0.3s;
-}
-footer a:hover {
-  color: #fff !important;
-  text-decoration: underline;
-}
-
-/* WhatsApp + Call floating buttons */
-a[href*="wa.me"], .call-float {
-  position: fixed;
-  bottom: 25px;
+/* Hero WhatsApp button */
+.whatsapp-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 60px;
   height: 60px;
   border-radius: 50%;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+  box-shadow: 0 0 15px rgba(37, 211, 102, 0.7);
+  text-decoration: none;
+  margin-top: 20px;
+}
+
+/* Floating buttons - LOWERED, NO OVERLAP */
+.call-float, .whatsapp-float {
+  position: fixed;
+  right: 20px;
+  width: 58px;
+  height: 58px;
+  border-radius: 50%;
+  background: #25D366;
+  color: white;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 28px;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
-  transition: all 0.3s ease;
-  z-index: 999;
+  font-size: 27px;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.8);
+  z-index: 99999;
   text-decoration: none;
-}
-a[href*="wa.me"] { 
-  right: 20px; 
-  background: #25D366; 
-  color: white;
-}
-.call-float { 
-  right: 95px; 
-  background: #007bff; 
-  color: white;
-}
-a[href*="wa.me"]:hover, .call-float:hover {
-  transform: scale(1.1) translateY(-3px);
-  box-shadow: 0 8px 25px rgba(37, 211, 102, 0.5);
-}
-
-/* Mobile spacing fix */
-@media (max-width: 600px) {
-  footer {
-    padding: 30px 15px !important;
-  }
-  a[href*="wa.me"], .call-float {
-    width: 55px;
-    height: 55px;
-    font-size: 24px;
-  }
-  .call-float { right: 85px; }
-}
-
-/* Sticky footer for short pages */
-html, body {
-  height: 100%;
-  margin: 0;
-}
-body {
-  display: flex;
-  flex-direction: column;
-  min-height: 100vh;
-}
-main, section:first-of-type {
-  flex: 1;
-}
-/* === FLOATING BUTTONS - RIGHT STACKED === */
-.whatsapp-float, .call-float {
-  position: fixed !important;
-  right: 20px !important;
-  width: 60px !important;
-  height: 60px !important;
-  border-radius: 50% !important;
-  background: #25D366 !important;
-  color: white !important;
-  display: flex !important;
-  align-items: center !important;
-  justify-content: center !important;
-  font-size: 28px !important;
-  box-shadow: 0 0 20px rgba(37, 211, 102, 0.7) !important;
-  z-index: 99999 !important;
-  text-decoration: none !important;
 }
 
 .call-float {
-  bottom: 170px !important;
+  bottom: 170px; /* Lower = above footer */
 }
 
 .whatsapp-float {
-  bottom: 95px !important;
+  bottom: 90px; /* 80px gap = clean stack */
 }
 
-/* Mobile smaller */
+/* Mobile */
 @media (max-width: 600px) {
-  .whatsapp-float, .call-float {
-    width: 55px !important;
-    height: 55px !important;
-    font-size: 26px !important;
-    right: 15px !important;
-  }
-  .call-float { bottom: 155px !important; }
-  .whatsapp-float { bottom: 90px !important; }
+  .tagline { font-size: 2.2rem; }
+  .call-float { bottom: 160px; }
+  .whatsapp-float { bottom: 80px; }
+  body { padding-bottom: 200px; }
 }
