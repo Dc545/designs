@@ -361,3 +361,44 @@ body {
 main, section:first-of-type {
   flex: 1;
 }
+/* === FIX FLOATING BUTTONS - MOBILE BROWSER BAR === */
+a[href*="wa.me"], .call-float {
+  position: fixed;
+  bottom: calc(85px + env(safe-area-inset-bottom));
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  box-shadow: 0 6px 20px rgba(0,0,0,0.4);
+  transition: all 0.3s ease;
+  z-index: 9999;
+  text-decoration: none;
+}
+a[href*="wa.me"] { 
+  right: 20px; 
+  background: #25D366; 
+  color: white;
+}
+.call-float { 
+  right: 95px; 
+  background: #007bff; 
+  color: white;
+}
+
+/* iPhone/Android safe area */
+html {
+  padding-bottom: env(safe-area-inset-bottom);
+}
+
+/* Mobile resize */
+@media (max-width: 600px) {
+  a[href*="wa.me"], .call-float {
+    width: 55px;
+    height: 55px;
+    font-size: 24px;
+  }
+  .call-float { right: 85px; }
+}
