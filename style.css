@@ -361,10 +361,10 @@ body {
 main, section:first-of-type {
   flex: 1;
 }
-/* === FLOATING BUTTONS - STACKED VERTICAL === */
+/* === FLOATING BUTTONS - RIGHT STACKED + GLOW === */
 a[href*="wa.me"] {
   position: fixed !important;
-  bottom: 150px !important;
+  bottom: 95px !important;
   right: 20px !important;
   width: 60px !important;
   height: 60px !important;
@@ -374,43 +374,37 @@ a[href*="wa.me"] {
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 28px !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
+  font-size: 30px !important;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6) !important;
   z-index: 99999 !important;
   text-decoration: none !important;
 }
 
 .call-float {
   position: fixed !important;
-  bottom: 80px !important;
+  bottom: 170px !important;
   right: 20px !important;
   width: 60px !important;
   height: 60px !important;
   border-radius: 50% !important;
-  background: #007bff !important;
+  background: #25D366 !important;
   color: white !important;
   display: flex !important;
   align-items: center !important;
   justify-content: center !important;
-  font-size: 28px !important;
-  box-shadow: 0 6px 20px rgba(0,0,0,0.4) !important;
-  z-index: 99998 !important;
+  font-size: 30px !important;
+  box-shadow: 0 0 20px rgba(37, 211, 102, 0.6) !important;
+  z-index: 99999 !important;
   text-decoration: none !important;
 }
-/* Mobile: smaller + more space */
-/* Mobile: stacked vertical, no tangle */
+
+/* Mobile smaller */
 @media (max-width: 600px) {
-  a[href*="wa.me"] {
+  a[href*="wa.me"], .call-float {
     width: 55px !important;
     height: 55px !important;
-    bottom: 150px !important;
-    right: 20px !important;
+    font-size: 26px !important;
   }
-  .call-float {
-    width: 55px !important;
-    height: 55px !important;
-    bottom: 85px !important;
-    right: 20px !important;
-  }
-}
+  .call-float { bottom: 155px !important; }
+  a[href*="wa.me"] { bottom: 90px !important; }
 }
