@@ -726,3 +726,30 @@ body {
 body {
   padding-top: 62px !important;
 }
+/* BIGGER LOGO + LESS GLOW */
+.nav .logo img {
+  width: 46px !important;  /* bumped from 42px */
+  height: 46px !important;
+  max-width: 46px !important;
+  max-height: 46px !important;
+  filter: drop-shadow(0 0 6px #00ff88) !important; /* single soft glow only */
+  vertical-align: middle !important;
+  position: relative !important;
+  top: 2px !important; /* keep same lower position */
+}
+
+.nav .logo-text {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  line-height: 46px !important; /* match new logo height */
+  margin-left: 10px !important;
+}
+
+.nav {
+  padding: 7px 16px !important; /* 7px top/bottom so header stays tight */
+}
+
+body {
+  padding-top: 60px !important; /* 46px + 7px*2 */
+}
