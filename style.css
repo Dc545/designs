@@ -596,26 +596,25 @@ body {
   padding: 0 !important;
   display: inline-block !important;
 }
-/* HEADER LOGO SLIGHTLY BIGGER THAN FOOTER */
+/* HEADER LOGO = FOOTER SIZE EXACT COPY */
 .nav .logo img {
-  width: 30px !important;
-  height: 30px !important;
-  max-width: 30px !important;
-  max-height: 30px !important;
+  width: 22px !important;
+  height: 22px !important;
+  max-width: 22px !important;
+  max-height: 22px !important;
 }
 
 .nav .logo-text {
-  font-size: 14px !important;
-  font-weight: 700 !important;
-  line-height: 30px !important; /* must match logo height */
+  font-size: 12px !important;
+  font-weight: 600 !important;
+  line-height: 22px !important; /* must match logo height */
   color: white !important;
 }
 
-/* Adjust nav height to fit new logo */
+/* Slim nav to match footer height */
 .nav {
-  padding: 10px 20px !important;
+  padding: 6px 20px !important;
 }
 
 body {
-  padding-top: 54px !important; /* 30px logo + 10px padding top/bottom + breathing room */
-}
+  padding-top: 46px !important; /* 22px logo + 6px*2 padding + small gap */
