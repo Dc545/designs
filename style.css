@@ -608,3 +608,30 @@ body {
 body {
   padding-top: 52px!important;
 }
+/* FINAL HEADER LOGO SIZE - 30px */
+.nav .logo img {
+  width: 30px !important;
+  height: 30px !important;
+  max-width: 30px !important;
+  max-height: 30px !important;
+  display: block !important;
+  flex-shrink: 0 !important;
+}
+
+.nav .logo-text {
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  line-height: 30px !important;
+  margin: 0 !important;
+  padding: 0 !important;
+  display: inline-block !important;
+}
+
+.nav {
+  padding: 10px 20px !important;
+}
+
+body {
+  padding-top: 54px !important;
+}
