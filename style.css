@@ -753,3 +753,22 @@ body {
 body {
   padding-top: 60px !important; /* 46px + 7px*2 */
 }
+/* GET STARTED BUTTON */
+.get-started-btn {
+  display: inline-block !important;
+  background: #00ff88 !important;
+  color: black !important;
+  font-size: 14px !important;
+  font-weight: 700 !important;
+  padding: 10px 24px !important;
+  border-radius: 8px !important;
+  text-decoration: none !important;
+  margin-top: 16px !important;
+  box-shadow: 0 0 12px rgba(0, 255, 136, 0.4) !important;
+  transition: all 0.2s ease !important;
+}
+
+.get-started-btn:active {
+  transform: scale(0.95) !important;
+  box-shadow: 0 0 20px rgba(0, 255, 136, 0.6) !important;
+}
