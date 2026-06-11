@@ -502,3 +502,51 @@ body {
   margin: 0 !important;
   padding: 0 !important;
 }
+/* FORCE RECENT WORKS SMALLER - NUCLEAR OPTION */
+.recent-works img,
+.portfolio-item img,
+.work-item img,
+.hero img,
+section img[src*="laptop"],
+section img[src*="mockup"] {
+  max-width: 280px !important; /* was 380px - now much smaller */
+  width: 90% !important;
+  height: auto !important;
+  display: block !important;
+  margin: 0 auto !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.3) !important;
+}
+
+/* Card container smaller too */
+.recent-works > div,
+.portfolio-item,
+.work-item {
+  max-width: 320px !important;
+  margin: 0 auto 30px auto !important;
+  padding: 0 !important;
+}
+
+/* Grid: 2 per row on desktop, 1 on mobile */
+.recent-works,
+.portfolio-grid,
+.works-grid {
+  display: grid !important;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)) !important;
+  gap: 20px !important;
+  max-width: 800px !important;
+  margin: 0 auto !important;
+  padding: 20px !important;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .recent-works img,
+  .portfolio-item img { 
+    max-width: 240px !important; 
+  }
+  .recent-works,
+  .portfolio-grid { 
+    grid-template-columns: 1fr !important; 
+  }
+}
