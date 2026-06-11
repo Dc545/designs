@@ -688,3 +688,41 @@ body {
 body {
   padding-top: 60px !important; /* 36px + 10px*2 + 4px */
 }
+/* NUCLEAR LEFT ALIGN + GLOW */
+.nav {
+  display: flex !important;
+  justify-content: flex-start !important;
+  align-items: center !important;
+  padding-left: 12px !important;
+  padding-right: 20px !important;
+  margin: 0 !important;
+  text-align: left !important;
+}
+
+.nav .logo {
+  display: flex !important;
+  align-items: center !important;
+  margin-left: 0 !important;
+  margin-right: auto !important; /* pushes everything after to right */
+}
+
+.nav .logo img {
+  width: 38px !important;
+  height: 38px !important;
+  max-width: 38px !important;
+  max-height: 38px !important;
+  filter: drop-shadow(0 0 12px #00ff88) drop-shadow(0 0 24px #00ff88) !important; /* double glow */
+  display: block !important;
+}
+
+.nav .logo-text {
+  font-size: 15px !important;
+  font-weight: 700 !important;
+  color: white !important;
+  line-height: 38px !important;
+  margin-left: 8px !important;
+}
+
+body {
+  padding-top: 62px !important;
+}
