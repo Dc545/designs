@@ -813,3 +813,26 @@ body {
   transform: scale(0.96) !important;
   box-shadow: 0 0 20px rgba(0, 255, 136, 0.6) !important;
 }
+/* Make all project images responsive + lightweight */
+img {
+  max-width: 100%;       /* Never wider than screen */
+  height: auto;          /* Keep ratio, no distortion */
+  display: block;        /* Remove weird gaps */
+}
+
+/* For your project grid on dc545.github.io/designs/ */
+.project-img, 
+.designs img {
+  width: 100%;
+  max-width: 600px;      /* Desktop: max 600px wide is enough */
+  height: auto;
+  border-radius: 12px;   /* Optional: clean look */
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1); /* Optional: depth */
+}
+
+/* Mobile - Lagos data saving mode */
+@media (max-width: 768px) {
+  .project-img {
+    max-width: 100%;     /* Full width on phone */
+  }
+}
