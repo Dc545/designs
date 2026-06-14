@@ -951,7 +951,8 @@ img {
 .glass-card h2, 
 .glass-card h3, 
 .glass-card p {
-  color: #0f172a;
+  color: #ffffff !important;
+}
 }
 
 /* Mobile responsive */
