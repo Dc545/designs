@@ -971,3 +971,38 @@ img {
     font-size: 1.2rem;
   }
 }
+/* Floating buttons - WhatsApp + Call - Android fix */
+.float-btn {
+  position: fixed !important;
+  right: 20px;
+  z-index: 9999 !important;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  box-shadow: 0 4px 12px rgba(0, 255, 100, 0.4);
+  transition: transform 0.2s;
+}
+
+.float-btn:active {
+  transform: scale(0.9);
+}
+
+/* WhatsApp button - bottom one */
+.float-btn.whatsapp {
+  bottom: 20px;
+  background: #25D366;
+  color: white;
+  font-size: 28px;
+}
+
+/* Call button - sits above WhatsApp */
+.float-btn.call {
+  bottom: 95px;
+  background: #00BFFF;
+  color: white;
+  font-size: 24px;
+}
