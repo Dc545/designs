@@ -930,16 +930,20 @@ img {
   }
 }
  /* Glassmorphism card wrapper - covers all page content */
-.glass-card {
-  background: rgba(255, 255, 255, 0.15);
-  backdrop-filter: blur(12px);
-  -webkit-backdrop-filter: blur(12px);
-  border: 1px solid rgba(255, 255, 255, 0.2);
-  border-radius: 24px;
-  padding: 60px 40px;
-  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
-  max-width: 1000px;
+}.glass-card {
+  background: rgba(0, 0, 0, 0.4);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 16px;
+  padding: 40px 20px;
   margin: 40px auto;
+  max-width: 900px;
+}
+
+.glass-card h1, 
+.glass-card h2, 
+.glass-card h3, 
+.glass-card p {
+  color: white;
 }
 
 /* Text contrast fix so it reads clean on dark gradient */
