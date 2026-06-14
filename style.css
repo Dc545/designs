@@ -929,13 +929,19 @@ img {
     font-size: 1.2rem;
   }
 }
-/* Glassmorphism card wrapper */
+ Glassmorphism card wrapper */
 .glass-card {
   background: rgba(255, 255, 255, 0.15);
   backdrop-filter: blur(12px);
   -webkit-backdrop-filter: blur(12px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   border-radius: 24px;
+  padding: 60px 40px;
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
+  max-width: 1000px;
+  margin: 40px auto;
+}
+
   padding: 60px 40px;
   box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.12);
   max-width: 1000px;
